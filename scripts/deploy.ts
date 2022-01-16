@@ -16,12 +16,12 @@ async function main() {
   const FreeWayDriver = await ethers.getContractFactory('FreeWayDriver');
   const freeWayDriver = await FreeWayDriver.deploy();
 
-  // await freeWayDriver.deployed();
+  await freeWayDriver.deployed();
 
   const FreeWayRider = await ethers.getContractFactory('FreeWayRider');
   const freeWayRider = await FreeWayRider.deploy();
 
-  // await freeWayRider.deployed();
+  await freeWayRider.deployed();
 
   console.log('FreeWayDriver deployed to:', freeWayDriver.address);
   console.log('FreeWayRider deployed to:', freeWayRider.address);
